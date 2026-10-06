@@ -1,0 +1,206 @@
+{
+  "timestamp": "2026-10-06T16:08:30.426Z",
+  "environment": "Unoptimized CSR Baseline",
+  "accessibility": [
+    {
+      "state": "Initial Page Load",
+      "violationsCount": 2,
+      "violations": [
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Ensure the document has a main landmark",
+          "nodesAffected": 1,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright"
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodesAffected": 4,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright"
+        }
+      ]
+    },
+    {
+      "state": "Accordion 1 - Live Log Injected",
+      "violationsCount": 2,
+      "violations": [
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Ensure the document has a main landmark",
+          "nodesAffected": 1,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright"
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodesAffected": 5,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright"
+        }
+      ]
+    },
+    {
+      "state": "Form Step 1 - Error State",
+      "violationsCount": 4,
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodesAffected": 1,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright"
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodesAffected": 1,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright"
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Ensure the document has a main landmark",
+          "nodesAffected": 1,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright"
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodesAffected": 6,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright"
+        }
+      ]
+    },
+    {
+      "state": "Form Step 2 - Mounted",
+      "violationsCount": 4,
+      "violations": [
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodesAffected": 1,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright"
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Ensure the document has a main landmark",
+          "nodesAffected": 1,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright"
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodesAffected": 6,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright"
+        },
+        {
+          "id": "select-name",
+          "impact": "critical",
+          "description": "Ensure select element has an accessible name",
+          "nodesAffected": 1,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/select-name?application=playwright"
+        }
+      ]
+    },
+    {
+      "state": "Accordion 3 - Activity Stream",
+      "violationsCount": 2,
+      "violations": [
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Ensure the document has a main landmark",
+          "nodesAffected": 1,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright"
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodesAffected": 4,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright"
+        }
+      ]
+    },
+    {
+      "state": "Table - 500 Unvirtualized Rows Loaded",
+      "violationsCount": 2,
+      "violations": [
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Ensure the document has a main landmark",
+          "nodesAffected": 1,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright"
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodesAffected": 2505,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright"
+        }
+      ]
+    },
+    {
+      "state": "Modal - Active Inspection Dialog",
+      "violationsCount": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodesAffected": 2507,
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright"
+        }
+      ]
+    }
+  ],
+  "performance": [
+    {
+      "milestone": "01_Initial_Page_Load",
+      "domNodes": 25,
+      "durationMs": 783.3,
+      "jsHeapSizeMB": 9.54
+    },
+    {
+      "milestone": "02_Accordion_1_Feed_Injection",
+      "domNodes": 28,
+      "jsHeapSizeMB": 9.54
+    },
+    {
+      "milestone": "03_Form_Validation_Error_State",
+      "domNodes": 33,
+      "jsHeapSizeMB": 9.54
+    },
+    {
+      "milestone": "04_Form_Step_2_Mounted",
+      "domNodes": 35,
+      "jsHeapSizeMB": 9.54
+    },
+    {
+      "milestone": "05_Activity_Stream_Expanded",
+      "domNodes": 31,
+      "jsHeapSizeMB": 9.54
+    },
+    {
+      "milestone": "06_Table_500_Rows_Mounted",
+      "domNodes": 4036,
+      "durationMs": 284.98,
+      "jsHeapSizeMB": 9.54
+    },
+    {
+      "milestone": "07_Modal_Dialog_Opened",
+      "domNodes": 4051,
+      "jsHeapSizeMB": 9.54
+    }
+  ]
+}
