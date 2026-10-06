@@ -53,7 +53,7 @@ test('Comprehensive Accessibility & Performance Benchmark Suite', async ({ page,
         });
     }
 
-    // Initial Page Load ---
+    // Milestone: 1 Initial Page Load ---
     const startTime = performance.now();
     await page.goto('http://localhost:5173', { waitUntil: 'networkidle' });
     const loadDuration = performance.now() - startTime;
@@ -61,7 +61,7 @@ test('Comprehensive Accessibility & Performance Benchmark Suite', async ({ page,
     await recordPerformanceMetrics('01_Initial_Page_Load', loadDuration);
     await recordAccessibilityScan('Initial Page Load');
 
-    // Accordion 1 (System Overview & Live Feed Injection) ---
+    // Milestone: 2 Accordion 1 (System Overview & Live Feed Injection) ---
     const accordion1Header = page.locator('.accordion-header', { hasText: 'Quick System Overview' });
     await accordion1Header.click();
 
@@ -72,7 +72,7 @@ test('Comprehensive Accessibility & Performance Benchmark Suite', async ({ page,
     await recordPerformanceMetrics('02_Accordion_1_Feed_Injection');
     await recordAccessibilityScan('Accordion 1 - Live Log Injected');
 
-    // Accordion 2 (Multi-Step Form Errors & Validation State) ---
+    // Milestone: 3 Accordion 2 (Multi-Step Form Errors & Validation State) ---
     const accordion2Header = page.locator('.accordion-header', { hasText: 'Inventory Intake Wizard' });
     await accordion2Header.click();
 
@@ -83,7 +83,7 @@ test('Comprehensive Accessibility & Performance Benchmark Suite', async ({ page,
     await recordPerformanceMetrics('03_Form_Validation_Error_State');
     await recordAccessibilityScan('Form Step 1 - Error State');
 
-    // Fill input correctly and advance to Step 2
+    // Milestone: 4 Fill input correctly and advance to Step 2
     await page.getByPlaceholder('Enter item name...').fill('Pharmaceutical Batch Alpha');
     await nextStepButton.click();
     await expect(page.getByText('Step 2: Details & Confirmation')).toBeVisible();
@@ -91,14 +91,14 @@ test('Comprehensive Accessibility & Performance Benchmark Suite', async ({ page,
     await recordPerformanceMetrics('04_Form_Step_2_Mounted');
     await recordAccessibilityScan('Form Step 2 - Mounted');
 
-    // Accordion 3 (Live Activity Stream) ---
+    // Milestone: 5 Accordion 3 (Live Activity Stream) ---
     const accordion3Header = page.locator('.accordion-header', { hasText: 'Live Activity Stream' });
     await accordion3Header.click();
 
     await recordPerformanceMetrics('05_Activity_Stream_Expanded');
     await recordAccessibilityScan('Accordion 3 - Activity Stream');
 
-    // Accordion 4 (Unvirtualized Table - 500 DOM Rows) ---
+    // Milestone: 6 Accordion 4 (Unvirtualized Table - 500 DOM Rows) ---
     const tableStartTime = performance.now();
     const accordion4Header = page.locator('.accordion-header', { hasText: 'Full Asset Catalog Table' });
     await accordion4Header.click();
@@ -110,7 +110,7 @@ test('Comprehensive Accessibility & Performance Benchmark Suite', async ({ page,
     await recordPerformanceMetrics('06_Table_500_Rows_Mounted', tableRenderDuration);
     await recordAccessibilityScan('Table - 500 Unvirtualized Rows Loaded');
 
-    // Inspection Modal (Unmanaged Focus & Overlay) ---
+    // Milestone: 7 Inspection Modal (Unmanaged Focus & Overlay) ---
     const inspectButton = page.locator('.data-table tbody tr').first().getByRole('button', { name: 'Inspect' });
     await inspectButton.click();
 
